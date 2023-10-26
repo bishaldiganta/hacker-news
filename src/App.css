@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.storie-card h3,
+ul {
+  text-align: start;
+}
+
+.storie-card ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.storie-card ul li {
+  list-style: none;
+}

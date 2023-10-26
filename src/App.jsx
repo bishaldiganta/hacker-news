@@ -43,11 +43,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>HELLO</h1>
+      <h1>BB - The Pirate Island</h1>
       <input type="text" onChange={searchItems} />{" "}
       {/* Display an input field and attach an 'onChange' event handler. */}
       <div>
-        <h2>Story</h2>
+        <h2>Results</h2>
         {error && <h2>Something is wrong</h2>}{" "}
         {/* Display an error message if 'error' state is true. */}
         {posts && posts.map((storie) => <StorieCard storie={storie} />)}
