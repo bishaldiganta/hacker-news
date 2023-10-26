@@ -12,10 +12,10 @@ const StorieCard = ({ storie }) => {
 
   return (
     <div
-      className="storie-card border border-dark mb-3 rounded shadow p-2 px-4"
+      className="storie-card mb-3 rounded shadow p-2 px-4"
       key={storie.story_id} // You can't use 'key' directly on a div; it should be used when rendering a list of elements
     >
-      <h3 className="text-primary mb-5">{storie.title}</h3>{" "}
+      <h4 className="text-primary mb-5">{storie.title}</h4>{" "}
       {/* Display the story title */}
       <ul className="d-flex justify-content-between  gap-5 list-unstyled">
         <li>Author: {storie.author}</li> {/* Display the author's name */}

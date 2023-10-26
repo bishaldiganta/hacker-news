@@ -53,7 +53,7 @@ function App() {
     <div className="App d-flex flex-column justify-content-center align-items-center px-5">
       <div className="container d-flex flex-column gap-4 justify-content-center align-items-center p-5 m-5 bg-light rounded shadow-lg">
         <img
-          className="w-50 h-50 rounded shadow"
+          className="w-25 h-25 rounded shadow"
           src="src/assets/pirate.jpg"
           alt="Pirate Ship"
         />
