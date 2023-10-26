@@ -1,7 +1,7 @@
-import "./App.css";
-
+import "./index.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "./components/Navbar";
 
 // COMPONENTS IMPORT
 import StorieCard from "./components/StorieCard";
@@ -42,9 +42,17 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1 className="text-2xl font-bold underline text-center">BB - The Pirate Island</h1>
-      <input type="text" onChange={searchItems} />{" "}
+    <>
+    <div className="App relative md:container md:mx-auto flex-col ">
+      <Navbar className=""/>
+      <h1 className="text-2xl font-bold text-center">BB - The Pirate Island</h1>
+      <div className="border-2 border-gray-950 place-self-center">
+      <input className="" type="text" onChange={searchItems} /><button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
+        <i className="fas fa-search"></i>
+      </button>
+      </div>
+      
+      {" "}
       {/* Display an input field and attach an 'onChange' event handler. */}
       <div>
         <h2>Results</h2>
@@ -54,6 +62,7 @@ function App() {
         {/* Render 'StorieCard' components if 'posts' state is not null, passing each story as a prop. */}
       </div>
     </div>
+    </>
   );
 }
 

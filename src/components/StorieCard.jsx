@@ -1,5 +1,6 @@
 import React from "react";
-/* import "./App.css"; */
+import "/src/index.css";
+
 
 const StorieCard = ({ storie }) => {
   console.log(storie);
