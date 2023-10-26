@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>BB - The Pirate Island</h1>
+      <h1 className="text-2xl font-bold underline text-center">BB - The Pirate Island</h1>
       <input type="text" onChange={searchItems} />{" "}
       {/* Display an input field and attach an 'onChange' event handler. */}
       <div>
